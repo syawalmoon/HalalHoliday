@@ -25,13 +25,14 @@ const Footer2 = (props) => {
             size="lg"
             variant="FillLightblue800"
           >
-            Add new property
+            Add new property of me
           </Button>
           <Button
             className="font-bold font-ptsans lg:ml-[27px] xl:ml-[34px] 2xl:ml-[39px] 3xl:ml-[46px] lg:text-[11px] xl:text-[14px] 2xl:text-[16px] 3xl:text-[19px] text-center w-[17%]"
             shape="RoundedBorder2"
             size="lg"
             variant="FillLightblue800"
+
           >
             Share your feedback
           </Button>
