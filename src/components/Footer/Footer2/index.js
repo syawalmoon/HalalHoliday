@@ -20,9 +20,11 @@ const Footer2 = (props) => {
             FAQs
           </Text>
           <Button
-            className="font-bold font-ptsans hover:bg-sky-900 lg:ml-[268px] xl:ml-[335px] 2xl:ml-[377px] 3xl:ml-[452px] lg:text-[11px] xl:text-[14px] 2xl:text-[16px] 3xl:text-[19px] text-center w-[17%]"
+            className="font-bold font-ptsans hover:bg-sky-900 focus:ring-4 lg:ml-[268px] xl:ml-[335px] 2xl:ml-[377px] 3xl:ml-[452px] lg:text-[11px] xl:text-[14px] 2xl:text-[16px] 3xl:text-[19px] text-center w-[17%]"
             shape="RoundedBorder3"
             size="lg"
+            type="button"
+            data-modal-toggle="staticModal"
             variant="FillLightblue800"
           >
             Add new property

@@ -89,8 +89,9 @@ module.exports = {
         indigo_902: "#000066",
         gray_200_ce: "#e7e7e7ce",
         indigo_903: "#013580",
-        indigo_900: "#173042",
+        indigo_900: "#242424",
         indigo_901: "#012169",
+        indigo_904: "#373737",
       },
       borderRadius: {
         radius2: "2px",

@@ -33,7 +33,7 @@ const Header4 = (props) => {
                     value={inputvalue}
                     onChange={(e) => setInputvalue(e?.target?.value)}
                     className="font-normal font-ptsans not-italic p-[0] lg:text-[11px] xl:text-[14px] 2xl:text-[16px] 3xl:text-[19px] placeholder:text-white_A700_99 text-white_A700_99 w-[100%]"
-                    wrapClassName="2xl:ml-[518px] 2xl:mt-[7px] 3xl:ml-[621px] 3xl:mt-[8px] flex lg:ml-[368px] lg:mt-[4px] w-[23%] xl:ml-[460px] xl:mt-[6px]"
+                    wrapClassName="bg-indigo_904 2xl:ml-[518px] 2xl:mt-[7px] 3xl:ml-[621px] 3xl:mt-[8px] flex lg:ml-[368px] lg:mt-[4px] w-[23%] xl:ml-[460px] xl:mt-[6px]"
                     name="Searchbar"
                     placeholder="Search for reservations"
                     suffix={
@@ -52,7 +52,7 @@ const Header4 = (props) => {
                       )
                     }
                     size="smSrc"
-                    variant="srcOutlineBlack9003f"
+                    // variant="indigo_904"
                   ></Input>
                   <Column className="items-center justify-start lg:ml-[13px] xl:ml-[16px] 2xl:ml-[19px] 3xl:ml-[22px] w-[7%]">
                     <Img

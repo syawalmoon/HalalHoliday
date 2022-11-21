@@ -3,14 +3,14 @@ import React from "react";
 import { Column, Stack, Text, Row, Img, Button } from "components";
 import { useNavigate } from "react-router-dom";
 
-const ConfirmationPage = () => {
+const ConfirmationhotelPage = () => {
   const navigate = useNavigate();
 
   function handleNavigate73() {
-    navigate("/questionaboutproperty");
+    navigate("/#");
   }
   function handleNavigate82() {
-    navigate("/howmuchpropertytolist");
+    navigate("/howmuchhoteltolist");
   }
 
   return (
@@ -91,7 +91,7 @@ const ConfirmationPage = () => {
                   You’re listing:
                 </Text>
                 <Img
-                  src="images/img_volume.svg"
+                  src="images/img_user_45X45.svg"
                   className="lg:h-[45px] xl:h-[57px] 2xl:h-[64px] 3xl:h-[76px] lg:mt-[24px] xl:mt-[31px] 2xl:mt-[35px] 3xl:mt-[42px] w-[88%]"
                   alt="volume"
                 />
@@ -101,7 +101,7 @@ const ConfirmationPage = () => {
                 as="h5"
                 variant="h5"
               >
-                One apartment where guests can
+                One hotel where guests can
                 <br /> book the entire place
               </Text>
               <Text
@@ -137,4 +137,4 @@ const ConfirmationPage = () => {
   );
 };
 
-export default ConfirmationPage;
+export default ConfirmationhotelPage;

@@ -3,11 +3,11 @@ import React from "react";
 import { Column, Stack, Img, Row, Text, Line, Input, Button } from "components";
 import { useNavigate } from "react-router-dom";
 
-const HowmuchpropertytolistPage = () => {
+const HowmuchhoteltolistPage = () => {
   const navigate = useNavigate();
 
   function handleNavigate76() {
-    navigate("/confirmation");
+    navigate("/confirmationhotel");
   }
 
   function handleNavigate77() {
@@ -53,9 +53,7 @@ const HowmuchpropertytolistPage = () => {
                         alt="ArrowOne"
                       />
                     </Row>
-                    <Text className="columnnamesproperty" variant="body6">
-                      122 Jalan Abc, Johor Bahru, Johor 8350...{" "}
-                    </Text>
+                   
                   </Column>
                 </Column>
                 <Img
@@ -86,44 +84,58 @@ const HowmuchpropertytolistPage = () => {
             as="h4"
             variant="h4"
           >
-            How many apartment are you listing?{" "}
+            How many hotel are you listing?{" "}
           </Text>
           <Stack className="lg:h-[277px] xl:h-[347px] 2xl:h-[390px] 3xl:h-[468px] lg:mt-[19px] xl:mt-[24px] 2xl:mt-[28px] 3xl:mt-[33px] w-[100%]">
             <Line className="absolute bg-gray_200_ce bottom-[24%] h-[1px] w-[100%]" />
             <Column className="absolute items-center justify-start w-[100%]">
               <Column className="bg-white_A700 items-center justify-center lg:p-[22px] xl:p-[28px] 2xl:p-[32px] 3xl:p-[38px] shadow-bs3 w-[100%]">
-                <Input
-                  className="font-medium not-italic p-[0] xl:text-[16px] ml-[20px] 2xl:text-[14px] 3xl:text-[16px] lg:text-[9px] placeholder:text-black_900 text-black_900 w-[100%]"
-                  wrapClassName="2xl:mt-[11px] 3xl:mt-[13px] flex lg:mt-[7px] w-[100%] xl:mt-[9px]"
-                  name="oneapartment"
-                  placeholder="One  Apartment"
-                  prefix={
-                    <Img
-                      src="images/img_home.svg"
-                      className="mr-[3px] bg-white_A700 lg:w-[23px] lg:h-[24px] lg:ml-[22px] xl:w-[29px] xl:h-[30px] xl:ml-[28px] 2xl:w-[33px] 2xl:h-[34px] 2xl:ml-[32px] 3xl:w-[39px] 3xl:h-[40px] 3xl:ml-[38px] my-[auto]"
-                      alt="home"
+                <ul class="grid gap-6 w-full md:grid-cols-2">
+                  <li>
+                    <input type="radio" id="hosting-small1" name="hosting" value="hosting-small" class="hidden peer" required="" />
+                    <label for="hosting-small1" class="inline-flex justify-between items-center p-5 w-full text-black_900 bg-white rounded-lg border border-gray-200 cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
+                      <div class="block">
+                        <Img
+                          src="images/img_home.svg"
+                          className="mr-[3px] bg-white_A700 lg:w-[23px] lg:h-[24px] lg:ml-[22px] xl:w-[29px] xl:h-[30px] xl:ml-[28px] 2xl:w-[33px] 2xl:h-[34px] 2xl:ml-[32px] 3xl:w-[39px] 3xl:h-[40px] 3xl:ml-[38px] my-[auto]"
+                          alt="home" loading="lazy" />
+                      </div>
+                      <div class="w-full ml-[75px] mt-[7px] text-lg font-medium">One hotel with one or multiple rooms that guests can book</div>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" id="hosting-big1" name="hosting" value="hosting-big" class="hidden peer" />
+                    <label for="hosting-big1" class="inline-flex justify-between items-center p-5 w-full text-black_900 bg-white rounded-lg border border-gray-200 cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600  hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
+                      <div class="block">
+                        <Img
+                          src="images/img_calculator.svg"
+                          className="mr-[2px] bg-white_A700 lg:w-[30px] lg:ml-[22px] xl:w-[38px] xl:ml-[27px] 2xl:w-[43px] 2xl:ml-[40px] 3xl:w-[51px] 3xl:ml-[37px] my-[auto]"
+                          alt="calculator" />
+                      </div>
+                      <div class="w-full ml-[75px] mt-[7px] text-lg font-medium">Multiple hotels with one or multiple rooms that guests can book</div>
+                    </label><br></br>
+                    <div class="mt-4 hidden peer-checked:block">
+                <div class="mt-6">
+                <Column className="justify-start lg:mb-[4px] xl:mb-[6px] 2xl:mb-[7px] 3xl:mb-[8px] mt-[1px] w-[68%]">
+                  <Column className="justify-start w-[49%]">
+                    <Text className="Firstlastname" variant="body4">
+                    Number of properties
+                    </Text>
+                  </Column>
+                  <Row className=" mt-4 items-left justify-start lg:mt-[5px] xl:mt-[7px] 2xl:mt-[8px] 3xl:mt-[9px] w-[100%]">
+                  <input 
+                    id="message" 
+                    type="number"
+                    rows="1"
+                    defaultValue={2}
+                    class="justify-start mb-1.5 block p-2 w-13 text-sm text-gray-900 bg-white border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
                     />
-                  }
-                  shape="RoundedBorder3"
-                  size="lg"
-                  variant="OutlineLightblue800"
-                ></Input>
-                <Input
-                  className="font-medium not-italic p-[0] xl:text-[16px] ml-[20px] 2xl:text-[14px] 3xl:text-[16px] lg:text-[9px] placeholder:text-black_900 text-black_900 w-[100%]"
-                  wrapClassName="2xl:mb-[15px] 2xl:mt-[34px] 3xl:mb-[18px] 3xl:mt-[40px] flex lg:mb-[10px] lg:mt-[24px] w-[100%] xl:mb-[13px] xl:mt-[30px]"
-                  name="multipleapartm"
-                  placeholder="Multiple Apartment"
-                  prefix={
-                    <Img
-                      src="images/img_calculator.svg"
-                      className="mr-[2px] bg-white_A700 lg:w-[30px] lg:ml-[22px] xl:w-[38px] xl:ml-[27px] 2xl:w-[43px] 2xl:ml-[31px] 3xl:w-[51px] 3xl:ml-[37px] my-[auto]"
-                      alt="calculator"
-                    />
-                  }
-                  shape="RoundedBorder3"
-                  size="lg"
-                  variant="OutlineBluegray101"
-                ></Input>
+                  </Row>
+                </Column>
+                </div>
+                    </div>
+                  </li>
+                </ul>
               </Column>
               <Row className="common-pointer items-center justify-between lg:mt-[24px] xl:mt-[30px] 2xl:mt-[34px] 3xl:mt-[40px] w-[100%]">
                 <Stack className="bg-white_A700 border border-light_blue_800 border-solid lg:h-[37px] xl:h-[46px] 2xl:h-[52px] 3xl:h-[62px] 2xl:px-[11px] 3xl:px-[13px] lg:px-[7px] xl:px-[9px] rounded-radius2 w-[11%]">
@@ -147,34 +159,9 @@ const HowmuchpropertytolistPage = () => {
             </Column>
           </Stack>
         </Column>
-        <Column className="font-roboto items-end lg:mt-[117px] xl:mt-[146px] 2xl:mt-[165px] 3xl:mt-[198px] lg:px-[32px] xl:px-[40px] 2xl:px-[45px] 3xl:px-[54px] w-[100%]">
-          <Column className="bg-blue_50 items-end justify-start p-[3px] shadow-bs w-[22%]">
-            <Column className="justify-start xl:mb-[11px] 2xl:mb-[13px] 3xl:mb-[15px] lg:mb-[9px] mt-[2px] w-[95%]">
-              <Row className="items-start justify-between ml-[4px] w-[99%]">
-                <Text className="rowdescription" variant="body6">
-                  Is there anything preventing you from <br />
-                  completing your registration at this <br />
-                  point?
-                </Text>
-                <Img
-                  src="images/img_multiply.png"
-                  className="Multiply"
-                  alt="Multiply"
-                />
-              </Row>
-              <Button
-                className="font-semibold lg:mt-[28px] xl:mt-[35px] 2xl:mt-[40px] 3xl:mt-[48px] lg:text-[11px] xl:text-[14px] 2xl:text-[16px] 3xl:text-[19px] text-center w-[42%]"
-                size="xl"
-                variant="OutlineLightblue500"
-              >
-                Let us know
-              </Button>
-            </Column>
-          </Column>
-        </Column>
       </Column>
     </>
   );
 };
 
-export default HowmuchpropertytolistPage;
+export default HowmuchhoteltolistPage;

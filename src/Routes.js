@@ -48,7 +48,9 @@ import NameLocation2ndPageOne from "pages/NameLocation2ndPageOne";
 import NameLocation1stPageOne from "pages/NameLocation1stPageOne";
 import Questionaboutproperty from "pages/Questionaboutproperty";
 import Confirmation from "pages/Confirmation";
-import Howmuchpropertytolist from "pages/Howmuchpropertytolist";
+import Confirmationhotel from "pages/Confirmationhotel";
+import Howmuchpropertytolist from "pages/Howmuchapartmenttolist";
+import Howmuchhoteltolist from "pages/Howmuchhotelltolist";
 import Propertycategorypage from "pages/Propertycategorypage";
 import Grouphomepage from "pages/Grouphomepage";
 import Addproperty from "pages/Addproperty";
@@ -92,7 +94,12 @@ const ProjectRoutes = () => {
           path="/howmuchpropertytolist"
           element={<Howmuchpropertytolist />}
         />
+         <Route
+          path="/howmuchhoteltolist"
+          element={<Howmuchhoteltolist />}
+        />
         <Route path="/confirmation" element={<Confirmation />} />
+        <Route path="/confirmationhotel" element={<Confirmationhotel />} />
         <Route
           path="/questionaboutproperty"
           element={<Questionaboutproperty />}

@@ -178,7 +178,7 @@ const QuestionaboutpropertyPage = () => {
                   >
                     https://www.vrbo.com/xxxxxx
                   </Text>
-                  <a href="https://www.airbnb.com/"
+                  <a href="https://www.airbnb.com/" target="_blank"
                     className="font-normal hover:underline 
                     3xl:mt-[10px] lg:mt-[6px] xl:mt-[8px] 2xl:mt-[7px] not-italic text-light_blue_800 w-[auto]"
                     variant="body4"> Where I can find this link? 

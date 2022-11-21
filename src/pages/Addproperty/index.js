@@ -21,7 +21,7 @@ const AddpropertyPage = () => {
   return (
     <>
       <Stack className="bg-gray_50 font-ptsans 2xl:h-[1025px] 3xl:h-[1230px] lg:h-[729px] xl:h-[911px] mx-[auto] w-[100%]">
-        <Stack className="absolute 2xl:h-[1025px] 3xl:h-[1230px] lg:h-[729px] xl:h-[911px] w-[100%]">
+        <Stack className="absolute 2xl:h-[1025px] 3xl:h-[1230px] lg:h-[729px] xl:h-[911px] w-[100%]"> 
           <Column className="absolute inset-x-[0] justify-start mx-[auto] top-[18%] w-[78%]">
             <Text className="columngrouphomepage" variant="body1">
               Group homepage
@@ -53,6 +53,7 @@ const AddpropertyPage = () => {
                     className="font-bold font-inter lg:mt-[11px] xl:mt-[14px] 2xl:mt-[16px] 3xl:mt-[19px] xl:text-[10px] 2xl:text-[12px] 3xl:text-[14px] lg:text-[8px] text-center w-[39%]"
                     shape="RoundedBorder2"
                     size="md"
+
                     variant="OutlineBlue600"
                   >
                     Select 1 eligible property
@@ -204,8 +205,10 @@ const AddpropertyPage = () => {
             </Stack>
           </Column>
           <Column className="absolute justify-start pb-[2px] pr-[1px] w-[100%]">
-          <Header4 className="w-[100%] " />
-            <Column className="bg-white_A700 items-center justify-start lg:mb-[266px] xl:mb-[333px] 2xl:mb-[375px] 3xl:mb-[450px] lg:ml-[278px] xl:ml-[347px] 2xl:ml-[391px] 3xl:ml-[469px] lg:mt-[118px] xl:mt-[147px] 2xl:mt-[166px] 3xl:mt-[199px] p-[1px] shadow-bs4 w-[38%]">
+          <Header4 className="w-[100%] " />       
+          
+             <Column className="bg-white_A700 items-center justify-start lg:mb-[266px] xl:mb-[333px] 2xl:mb-[375px] 3xl:mb-[450px] lg:ml-[278px] xl:ml-[347px] 2xl:ml-[391px] 3xl:ml-[469px] lg:mt-[118px] xl:mt-[147px] 2xl:mt-[166px] 3xl:mt-[199px] p-[1px] w-[38%]"
+           >
               <Column className="items-center justify-start xl:mt-[11px] 2xl:mt-[13px] 3xl:mt-[15px] lg:mt-[9px] w-[100%]">
                 <Column className="items-center justify-start w-[100%]">
                   <Row className="items-end justify-between w-[91%]">
@@ -268,10 +271,11 @@ const AddpropertyPage = () => {
                   ></Input>
                 </Column>
                 <Button
-                  className="common-pointer font-bold lg:mt-[13px] xl:mt-[16px] 2xl:mt-[19px] 3xl:mt-[22px] rounded-radius2 xl:text-[12px] 2xl:text-[14px] 3xl:text-[16px] lg:text-[9px] text-center w-[34%]"
+                  className="common-pointer hover:bg-sky-900 font-bold lg:mt-[13px] xl:mt-[16px] 2xl:mt-[19px] 3xl:mt-[22px] rounded-radius2 xl:text-[12px] 2xl:text-[14px] 3xl:text-[16px] lg:text-[9px] text-center w-[34%]"
                   onClick={handleNavigate63}
                   size="lg"
                   variant="FillLightblue800"
+                  type="submit"
                 >
                   Build your property
                 </Button>

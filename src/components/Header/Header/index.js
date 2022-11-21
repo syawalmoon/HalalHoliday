@@ -31,9 +31,7 @@ const Header = (props) => {
                     alt="ArrowOne"
                   />
                 </Row>
-                <Text className="columnnamesproperty" variant="body6">
-                  122 Jalan Abc, Johor Bahru, Johor 8350...{" "}
-                </Text>
+                
               </Column>
             </Column>
             <Img
